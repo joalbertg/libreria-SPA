@@ -1,0 +1,40 @@
+<div class="ed-container">
+  <div class="ed-item">
+    <form id="frmActualizar" action="#" method="post">
+      <fieldset>
+        <legend>Actualizar contacto</legend>
+
+        <label for="identificador">Identificador</label>
+        <input type="number" name="identificador" id="identificador" disabled>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required autocomplete="off">
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required>
+
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" required>
+
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento" required>
+
+        <label>Desea recibir información?</label>
+        <input type="checkbox" name="recibir" id="recibir">
+        <label for="recibir"></label>
+
+        <label>Color preferido:</label>
+        <input type="radio" name="color" id="azul" value="azul">
+        <label for="azul">Azul</label>
+        <input type="radio" name="color" id="rojo" value="rojo">
+        <label for="rojo">Rojo</label>
+        <input type="radio" name="color" id="verde" value="verde">
+        <label for="verde">Verde</label>
+
+        <button type="submit" id="btnActualizar" onclick="_.getCtrl().actualizar(_.get('frmActualizar'));">
+          Actualizar
+        </button>
+      </fieldset>
+    </form>
+  </div>
+</div>

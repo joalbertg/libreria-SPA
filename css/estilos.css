@@ -1,0 +1,196 @@
+/* menu */
+.ed-menu {
+  background-color: teal;
+}
+
+.ed-menu a {
+  color: white;
+  transition: all .2s;
+}
+
+.ed-menu a:hover {
+  background-color: #eee;
+  color: #333;
+}
+/* fin menu */
+
+/* formulario */
+fieldset {
+  boder: none;
+  padding: 1.5em;
+}
+
+legend {
+  font-size: 2em;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 1em;
+  min-width: 50%;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid teal;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"], input[type="date"] {
+  text-align: right;
+}
+
+button[type="submit"] {
+  background-color: teal;
+  border: none;
+  color: white;
+  display: block;
+  letter-spacing: 1.2;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover, [type="submit"]:focus {
+  box-shadow: 0 0 10px gray;
+}
+
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"] + label {
+  width: 3em;
+  height: 1em;
+  background-color: gray;
+  display: block;
+  border-radius: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all .5s;
+}
+
+input[type="checkbox"] + label:before {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 15px gray;
+  content: "";
+  display: block;
+  height: 1.5em;
+  position: relative;
+  transform: translateY(-15%);
+  transition: all .5s;
+  width: 1.5em;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: green;
+  left: 1.5em;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: teal;
+}
+
+input[type="checkbox"]:focus + label {
+  box-shadow: 0 0 20px teal;
+}
+
+input[type="radio"] {
+  width: 0;
+  height: 0;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  border-radius: 59%;
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  background-color: transparent;
+  box-shadow: 0 0 0 3px gray;
+  margin-right: .5em;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: teal;
+  width: .75em;
+  height: .75em;
+  box-shadow: 0 0 0 2px white,
+              0 0 0 5px teal;
+}
+
+/* fin formulario */
+
+/* tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-size: 24px;
+  line-height: 64px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+thead tr {
+  border-bottom: 1px solid gray;
+  line-height: 56px;
+}
+
+th {
+  color: rgba(51, 51, 51, 0.75);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid gray;
+  line-height: 48px;
+}
+
+tbody tr:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+td {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+td:first-child, th:first-child {
+  padding-left: 24px;
+  width: 50px;
+}
+
+.edad, .nacimiento {
+  text-align: right;
+}
+
+.acepta {
+  text-align: center;
+}
+
+.accion {
+  border: none;
+  background-color: transparent;
+  color: teal;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/* fin tabla */
